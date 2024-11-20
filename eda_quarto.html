@@ -108,28 +108,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="load-package" class="level2">
 <h2 class="anchored" data-anchor-id="load-package">Load Package</h2>
-<div id="f198768a" class="cell" data-execution_count="1">
+<div id="7568bb54" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="load-dataset-from-smoker.csv-file" class="level2">
 <h2 class="anchored" data-anchor-id="load-dataset-from-smoker.csv-file">Load dataset from smoker.csv file</h2>
-<div id="c316f39b" class="cell" data-execution_count="2">
+<div id="0f41139b" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'smoker.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="check-dimension" class="level2">
 <h2 class="anchored" data-anchor-id="check-dimension">Check dimension</h2>
-<div id="7bf73223" class="cell" data-execution_count="3">
+<div id="5d22433e" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="38">
+<div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>(10000, 3)</code></pre>
 </div>
 </div>
 </section>
 <section id="check-detail-of-dataset-cols-rows-types-etc." class="level2">
 <h2 class="anchored" data-anchor-id="check-detail-of-dataset-cols-rows-types-etc.">Check detail of dataset (cols, rows, types etc.)</h2>
-<div id="967c8112" class="cell" data-execution_count="4">
+<div id="304d32d9" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
@@ -147,9 +147,9 @@ memory usage: 234.5 KB</code></pre>
 </section>
 <section id="check-first-rows" class="level2">
 <h2 class="anchored" data-anchor-id="check-first-rows">Check first rows</h2>
-<div id="a9ed68f5" class="cell" data-execution_count="5">
+<div id="87bb9d62" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="40">
+<div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 
 
@@ -202,9 +202,9 @@ memory usage: 234.5 KB</code></pre>
 </section>
 <section id="check-last-rows" class="level2">
 <h2 class="anchored" data-anchor-id="check-last-rows">Check last rows</h2>
-<div id="c1b04398" class="cell" data-execution_count="6">
+<div id="9cebbc5f" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="41">
+<div class="cell-output cell-output-display" data-execution_count="14">
 <div>
 
 
@@ -257,15 +257,121 @@ memory usage: 234.5 KB</code></pre>
 </section>
 <section id="calculate-sum-of-treatment-column" class="level2">
 <h2 class="anchored" data-anchor-id="calculate-sum-of-treatment-column">Calculate sum of treatment column</h2>
-<div id="63ec4050" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>treatment_sum <span class="op">=</span> df[<span class="st">'treatment'</span>].<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="629639ac" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df.<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<pre><code>smoker       3055
+treatment    3032
+outcome      2793
+dtype: int64</code></pre>
+</div>
 </div>
 </section>
 <section id="create-a-descriptive-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-descriptive-statistics">Create a descriptive statistics</h2>
+<div id="d7af1e8f" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">smoker</th>
+<th data-quarto-table-cell-role="th">treatment</th>
+<th data-quarto-table-cell-role="th">outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>10000.000000</td>
+<td>10000.000000</td>
+<td>10000.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>0.305500</td>
+<td>0.303200</td>
+<td>0.279300</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>0.470948</td>
+<td>0.475702</td>
+<td>0.823383</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>5.000000</td>
+<td>8.000000</td>
+<td>67.000000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
 </section>
 <section id="count-of-unique-values-in-outcome" class="level2">
 <h2 class="anchored" data-anchor-id="count-of-unique-values-in-outcome">Count of unique values in outcome</h2>
+<div id="f28e8340" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df.value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>smoker  treatment  outcome
+0       0          0          5065
+        1          0          1155
+1       0          1          1073
+        1          1           850
+                   0           822
+0       0          1           572
+1       0          0           277
+0       1          1           170
+5       0          0             2
+0       0          6             1
+        1          5             1
+                   6             1
+        8          8             1
+        5          0             1
+        7          9             1
+1       1          7             1
+        6          0             1
+3       1          67            1
+2       1          5             1
+4       0          8             1
+        1          0             1
+                   4             1
+        2          3             1
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
 </section>
 
 </main>
