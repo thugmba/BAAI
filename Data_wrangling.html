@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="basic">Basic</h2>
 <section id="import-required-packages" class="level3">
 <h3 class="anchored" data-anchor-id="import-required-packages">Import required packages</h3>
-<div id="0576788a" class="cell" data-execution_count="1">
+<div id="0876e982" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -129,7 +129,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="load-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="load-dataset">Load dataset</h3>
-<div id="f7fb2c52" class="cell" data-execution_count="2">
+<div id="6bd07899" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="op">=</span> pd.read_csv(<span class="st">'smoker.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
@@ -141,9 +141,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="inspect-dimension" class="level3">
 <h3 class="anchored" data-anchor-id="inspect-dimension">Inspect dimension</h3>
-<div id="2b1f8457" class="cell" data-execution_count="3">
+<div id="2b25269b" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dataset.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>(10000, 3)</code></pre>
 </div>
 </div>
@@ -154,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="table-informationrows-columns-etc" class="level3">
 <h3 class="anchored" data-anchor-id="table-informationrows-columns-etc">Table information(Rows, columns, etc)</h3>
-<div id="779761bc" class="cell" data-execution_count="4">
+<div id="5c57cc1c" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dataset.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
@@ -176,9 +176,9 @@ memory usage: 234.5 KB</code></pre>
 </section>
 <section id="check-first-few-rows" class="level3">
 <h3 class="anchored" data-anchor-id="check-first-few-rows">Check first few rows</h3>
-<div id="6a11e151" class="cell" data-execution_count="5">
+<div id="18fb32c8" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dataset.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="19">
 <div>
 
 
@@ -232,9 +232,9 @@ memory usage: 234.5 KB</code></pre>
 </section>
 <section id="check-first-few-rows-1" class="level3">
 <h3 class="anchored" data-anchor-id="check-first-few-rows-1">Check first few rows</h3>
-<div id="b11e040b" class="cell" data-execution_count="6">
+<div id="96a45cb0" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dataset.head(<span class="dv">7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="20">
 <div>
 
 
@@ -300,9 +300,9 @@ memory usage: 234.5 KB</code></pre>
 </section>
 <section id="check-last-few-rows" class="level3 smaller">
 <h3 class="smaller anchored" data-anchor-id="check-last-few-rows">Check last few rows</h3>
-<div id="d102a283" class="cell" data-execution_count="7">
+<div id="4d9ce0ae" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>dataset.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="21">
 <div>
 
 
@@ -356,9 +356,9 @@ memory usage: 234.5 KB</code></pre>
 </section>
 <section id="calculate-mean-of-column" class="level3">
 <h3 class="anchored" data-anchor-id="calculate-mean-of-column">Calculate mean of column</h3>
-<div id="2b4d6ef2" class="cell" data-execution_count="8">
+<div id="f8f12713" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>dataset[<span class="st">'treatment'</span>].mean()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="8">
+<div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>0.3032</code></pre>
 </div>
 </div>
@@ -366,9 +366,9 @@ memory usage: 234.5 KB</code></pre>
 </section>
 <section id="count-rows-of-same-value" class="level3">
 <h3 class="anchored" data-anchor-id="count-rows-of-same-value">Count rows of same value</h3>
-<div id="918bc5ed" class="cell" data-execution_count="9">
+<div id="764465e6" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>dataset[<span class="st">'treatment'</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="9">
+<div class="cell-output cell-output-display" data-execution_count="23">
 <pre><code>treatment
 0    6991
 1    3004
@@ -387,9 +387,9 @@ Name: count, dtype: int64</code></pre>
 </section>
 <section id="count-rows-of-same-value-1" class="level3">
 <h3 class="anchored" data-anchor-id="count-rows-of-same-value-1">Count rows of same value</h3>
-<div id="2e8843bf" class="cell" data-execution_count="10">
+<div id="50964052" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>dataset[<span class="st">'outcome'</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="10">
+<div class="cell-output cell-output-display" data-execution_count="24">
 <pre><code>outcome
 0     7324
 1     2665
@@ -408,9 +408,9 @@ Name: count, dtype: int64</code></pre>
 </section>
 <section id="sum-of-column" class="level3">
 <h3 class="anchored" data-anchor-id="sum-of-column">Sum of column</h3>
-<div id="33dd5fec" class="cell" data-execution_count="11">
+<div id="b9ae71d7" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>dataset.<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="11">
+<div class="cell-output cell-output-display" data-execution_count="25">
 <pre><code>smoker       3055
 treatment    3032
 outcome      2793
@@ -424,9 +424,9 @@ dtype: int64</code></pre>
 </section>
 <section id="sum-of-row" class="level3">
 <h3 class="anchored" data-anchor-id="sum-of-row">Sum of row</h3>
-<div id="097047a6" class="cell" data-execution_count="12">
+<div id="80f4f9bf" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>dataset.<span class="bu">sum</span>(axis <span class="op">=</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="12">
+<div class="cell-output cell-output-display" data-execution_count="26">
 <pre><code>0        0
 1        3
 2        8
@@ -450,9 +450,9 @@ Length: 10000, dtype: int64</code></pre>
 </section>
 <section id="statistics" class="level2 smaller">
 <h2 class="smaller anchored" data-anchor-id="statistics">Statistics</h2>
-<div id="a59d4658" class="cell" data-execution_count="13">
+<div id="f0c7bc77" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>dataset.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="13">
+<div class="cell-output cell-output-display" data-execution_count="27">
 <div>
 
 
@@ -526,9 +526,9 @@ Length: 10000, dtype: int64</code></pre>
 </section>
 <section id="statistics-1" class="level2 smaller">
 <h2 class="smaller anchored" data-anchor-id="statistics-1">Statistics</h2>
-<div id="f5a2d525" class="cell" data-execution_count="14">
+<div id="594cf0f5" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>dataset.describe().<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="14">
+<div class="cell-output cell-output-display" data-execution_count="28">
 <div>
 
 
